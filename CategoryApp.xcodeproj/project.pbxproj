@@ -8,17 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CE477C3B288E753C001858B7 /* CategoryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE477C3A288E753C001858B7 /* CategoryAppApp.swift */; };
-		CE477C3D288E753C001858B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE477C3C288E753C001858B7 /* ContentView.swift */; };
+		CE477C3D288E753C001858B7 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE477C3C288E753C001858B7 /* CategoryView.swift */; };
 		CE477C3F288E753D001858B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE477C3E288E753D001858B7 /* Assets.xcassets */; };
 		CE477C42288E753D001858B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE477C41288E753D001858B7 /* Preview Assets.xcassets */; };
+		CE477C49288E75E6001858B7 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE477C48288E75E6001858B7 /* CategoryModel.swift */; };
+		CE477C4B288E760F001858B7 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE477C4A288E760F001858B7 /* CategoryViewModel.swift */; };
+		CE477C4D288E762B001858B7 /* AFHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE477C4C288E762B001858B7 /* AFHttp.swift */; };
+		CE477C50288E764B001858B7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE477C4F288E764B001858B7 /* Alamofire */; };
+		CE4EF997288FB30F00892F0C /* CellCategore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4EF996288FB30F00892F0C /* CellCategore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE477C37288E753C001858B7 /* CategoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CategoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE477C3A288E753C001858B7 /* CategoryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAppApp.swift; sourceTree = "<group>"; };
-		CE477C3C288E753C001858B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE477C3C288E753C001858B7 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		CE477C3E288E753D001858B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE477C41288E753D001858B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE477C48288E75E6001858B7 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		CE477C4A288E760F001858B7 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		CE477C4C288E762B001858B7 /* AFHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFHttp.swift; sourceTree = "<group>"; };
+		CE4EF996288FB30F00892F0C /* CellCategore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCategore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE477C50288E764B001858B7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				CE477C3A288E753C001858B7 /* CategoryAppApp.swift */,
-				CE477C3C288E753C001858B7 /* ContentView.swift */,
+				CE477C3C288E753C001858B7 /* CategoryView.swift */,
+				CE4EF996288FB30F00892F0C /* CellCategore.swift */,
+				CE477C4A288E760F001858B7 /* CategoryViewModel.swift */,
+				CE477C48288E75E6001858B7 /* CategoryModel.swift */,
+				CE477C4C288E762B001858B7 /* AFHttp.swift */,
 				CE477C3E288E753D001858B7 /* Assets.xcassets */,
 				CE477C40288E753D001858B7 /* Preview Content */,
 			);
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = CategoryApp;
+			packageProductDependencies = (
+				CE477C4F288E764B001858B7 /* Alamofire */,
+			);
 			productName = CategoryApp;
 			productReference = CE477C37288E753C001858B7 /* CategoryApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = CE477C2E288E753C001858B7;
+			packageReferences = (
+				CE477C4E288E764B001858B7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CE477C38288E753C001858B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE477C3D288E753C001858B7 /* ContentView.swift in Sources */,
+				CE477C4D288E762B001858B7 /* AFHttp.swift in Sources */,
+				CE477C4B288E760F001858B7 /* CategoryViewModel.swift in Sources */,
+				CE477C3D288E753C001858B7 /* CategoryView.swift in Sources */,
+				CE477C49288E75E6001858B7 /* CategoryModel.swift in Sources */,
+				CE4EF997288FB30F00892F0C /* CellCategore.swift in Sources */,
 				CE477C3B288E753C001858B7 /* CategoryAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE477C4E288E764B001858B7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE477C4F288E764B001858B7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE477C4E288E764B001858B7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE477C2F288E753C001858B7 /* Project object */;
 }
